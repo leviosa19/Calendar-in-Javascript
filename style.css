@@ -1,0 +1,140 @@
+.calendar {
+  width: 245px;
+  /* border: 1px solid #dcdcff; */
+  border-radius: 5px;
+  background: #fff;
+  display: none;
+  font-family: Calibri;
+}
+table {
+  /* clear: both; */
+  width: 100%;
+  border: 1px solid #dcdcff;
+  border-radius: 3px;
+  border-collapse: collapse;
+  color: #444;
+}
+td {
+  /* width: 35px; */
+  /* height: 35px; */
+  text-align: center;
+  /* vertical-align: middle; */
+  /* border-right: 1px solid #dcdcff;
+	 border-top: 1px solid #dcdcff; */
+  /* width: 14.285714285714%; */
+}
+
+tr.r > td {
+  width: 30px;
+  height: 30px;
+}
+
+td.not-current {
+  color: #c0c0c0;
+}
+
+td.today {
+  font-weight: 700;
+  color: #28283b;
+  font-size: 1.5em;
+}
+
+thead td {
+  border: none;
+  color: #28283b;
+  /* text-transform: uppercase; */
+  /* font-size: 1.5em; */
+}
+
+tr.days {
+  color: #cecece;
+}
+
+.normal {
+  /* transition: all 0.3s ease; */
+}
+
+.normal:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #536dfe;
+  color: #fff;
+}
+
+#btnPrev {
+  /* float: left; */
+  /* margin-bottom: 20px; */
+  /* border: 1px solid lightgray;
+	 border-radius: 50%;
+	 background-color: lightgray;
+	 width: 30px;
+	 height: 30px; */
+}
+#btnPrev:before {
+  content: "\21E0";
+  /* padding-right: 7px; */
+}
+#btnNext {
+  /* float: right; */
+  /* margin-bottom: 20px; */
+}
+#btnNext:after {
+  content: "\21E2";
+  /* padding-left: 4px; */
+}
+#btnPrev,
+#btnNext {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #c0c0c0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#btnPrev:hover,
+#btnNext:hover {
+  color: #28283b;
+  /* font-weight: bold; */
+}
+
+#selectedMonth,
+#selectedYear {
+  border-radius: 2px;
+  /* border: 1px solid lightgray; */
+  padding: 3px;
+  outline: none;
+  border: none;
+  appearance: none;
+  padding: 2px 0;
+}
+
+#selectedMonth {
+  /* margin-left: -15px; */
+  margin-left: 0;
+}
+
+#selectedYear {
+  /* margin-left: 10px; */
+  margin-left: 5px;
+}
+
+.firstTD {
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.selectedDate {
+  background-color: #536dfe;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.bottomButtons {
+  cursor: pointer;
+  padding: 10px;
+  color: #536dfe;
+}
